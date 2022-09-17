@@ -1,0 +1,102 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+  padding-top: 120px;
+
+  .container_course {
+    padding-top: 10px;
+    background: #fff;    
+    width: 100%;
+
+    .container_contain {
+      display: flex;
+      flex-direction: column;
+      width: 87%;
+      padding: 15px 12px;
+      margin-right: auto;
+      margin-left: auto;
+
+      @media screen and (min-width: 1400px) {
+        width: 1320px;
+      }
+
+      @media screen and (min-width: 1200px) {
+        width: 1140px;
+      }
+
+      @media screen and (min-width: 992px) {
+        width: 960px;
+      }
+
+      @media screen and (min-width: 768px) {
+        width: 720px;
+      }
+
+      @media screen and (min-width: 556px) {
+        width: 87%;
+      }
+
+      h1{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 28px;
+        text-align: center;
+      }
+
+      p{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        margin: 0px;
+        line-height: 24px;
+        strong{
+          font-weight: bolder;
+        }
+      }
+    }
+
+    .subtitle_line{
+      width: 300px;
+      height: 10px;
+      background: linear-gradient(91.90915243299638deg, rgba(232, 45, 32, 1) 0%, rgba(252, 165, 42, 1) 100%);
+      border: none;
+      border-radius: 10px;
+      margin: 5px auto 10px auto;
+    }
+
+    .bottom_banner{
+      background: linear-gradient( 0deg, rgba(119, 26, 192, 1) 2%, rgba(255, 255, 255, 1) 97%);
+      width: 100%;
+      height: 240px;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      font-family: 'Montserrat SemiBold', 'Montserrat Regular', 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    padding: 20px 0 50px 0;
+
+      .bottom_banner_link_mobile {
+        width: 310px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .bottom_banner_URL {
+            width: 240px;
+            height: 78px;
+            margin: 5px 5px 20px 5px;
+        }
+    }
+    }
+  }
+
+}

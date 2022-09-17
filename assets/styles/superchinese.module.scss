@@ -1,0 +1,295 @@
+.flex_row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex_column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex_column_reverse {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+.flex_center {
+    justify-content: center;
+    align-items: center;
+}
+
+.flex_start {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.flex_end {
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+
+
+.subtitle_line {
+    width: 300px;
+    height: 10px;
+    background: linear-gradient(91.90915243299638deg, rgba(232, 45, 32, 1) 0%, rgba(252, 165, 42, 1) 100%);
+    border: none;
+    border-radius: 10px;
+    margin: 10px auto;
+}
+
+.super_chinese_container {
+    @extend .flex_column;
+    @extend .flex_center;
+    width: 100%;
+
+    .super_chinese_banner {
+        @extend .flex_row;
+        @extend .flex_start;
+        width: 100%;
+        height: 95vh;
+        padding-top: 80px;
+
+        @media screen and (min-width: 1200px) {
+            //do Smth
+        }
+
+        .super_chinese_banner_left_text {
+            @extend .flex_column;
+            @extend .flex_center;
+            width: 55%;
+            margin-top: 75px;
+
+            @media screen and (max-width: 1200px) {
+                width: 55%;
+            }
+
+            @media screen and (max-width: 992px) {
+                width: 50%;
+            }
+
+            @media screen and (max-width: 768px) {
+                width: 50%;
+            }
+
+            @media screen and (max-width: 556px) {
+                width: 100%;
+            }
+
+            h2 {
+                font-weight: 900;
+                font-family: 'VAG Rounded Std Black', 'VAG Rounded Std', sans-serif;
+                color: #fff;
+                font-size: 36px;
+                line-height: 60px;
+                text-transform: uppercase;
+                width: 300px;
+                text-align: center;
+            }
+
+            .super_chinese_banner_button_download {
+                text-transform: none;
+                font-size: 16px;
+                border: rgba(237, 87, 35, 1) solid 1px;
+                background-color: #fff;
+                color: #E73D14;
+                padding: 20px;
+                width: 310px;
+                display: block;
+                text-align: center;
+                text-transform: uppercase;
+                border-radius: 30px;
+                margin: 15px auto;
+
+                @media screen and (max-width: 992px) {
+                    display: none;
+                }
+            }
+
+            .super_chinese_banner_link_mobile {
+                width: 310px;
+                @extend .flex_row;
+                @extend .flex_center;
+
+                a {
+                    margin: 5px;
+                }
+
+                .super_chinese_banner_link_mobile_URL {
+                    width: 110px;
+                    height: 37px;
+                }
+
+                @media screen and (max-width: 992px) {
+                    display: none;
+                }
+            }
+
+        }
+    }
+
+    .superchinese_introduce {
+        width: 90%;
+        margin: 20px 0px;
+        flex-wrap: wrap;
+        @media screen and (max-width: 1200px) {
+            max-width: 1140px;
+        }
+
+        @media screen and (max-width: 992px) {
+            max-width: 960px;
+        }
+
+        @media screen and (max-width: 768px) {
+            max-width: 720px;
+        }
+
+        @media screen and (max-width: 556px) {
+            max-width: 540px;
+        }
+
+        min-height: 500px;
+        @extend .flex_row;
+        @extend .flex_start;
+        color: #111111;
+
+        .superchinese_introduce_container {
+            @extend .flex_column;
+            @extend .flex_center;
+            width: 50%;
+
+            @media screen and (max-width: 1200px) {
+                width: 50%;
+            }
+
+            @media screen and (max-width: 992px) {
+                width: 50%;
+            }
+
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
+
+            @media screen and (max-width: 556px) {
+                width: 100%;
+            }
+
+            min-height: 500px;
+        }
+
+        .superchinese_introduce_left {
+            @extend .flex_column;
+            @extend .flex_start;
+            width: 100%;
+            @media screen and (max-width: 768px) {
+                justify-content: center;
+                align-self: center;
+            }
+
+            @media screen and (max-width: 556px) {
+                justify-content: center;
+                align-self: center;
+            }
+        }
+
+        .superchinese_introduce_right {
+            @extend .flex_column;
+            @extend .flex_end;
+            width: 100%;
+            @media screen and (max-width: 768px) {
+                justify-content: center;
+                align-self: center;
+            }
+
+            @media screen and (max-width: 556px) {
+                justify-content: center;
+                align-self: center;
+            }
+        }
+
+        .superchinese_introduce_image {
+            width: 100%;
+            height: 550px;
+            width: 413px;
+        }
+
+        .superchinese_introduce_text_left {
+            @extend .flex_column;
+            @extend .flex_start;
+        }
+
+        .superchinese_introduce_text_right {
+            @extend .flex_column;
+            @extend .flex_end;
+        }
+
+        .superchinese_introduce_title {
+            font-family: 'Montserrat SemiBold', 'Montserrat Regular', 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 28px;
+            padding: 20px 0;
+        }
+
+        .superchinese_introduce_subtitle {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            padding: 20px 0px;
+        }
+    }
+
+    .superchinese_subtitle {
+        width: 85%;
+        min-height: 250px;
+        @extend .flex_column;
+        @extend .flex_center;
+
+        .superchinese_subtitle_title_big {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 28px;
+            text-align: center;
+        }
+
+        .superchinese_subtitle_title_small {
+            font-family: 'Montserrat Black', 'Montserrat Regular', 'Montserrat', sans-serif;
+            font-weight: 900;
+            font-style: normal;
+            font-size: 34px;
+            line-height: 50px;
+            padding: 10px 0;
+        }
+    }
+
+    .superchinese_bottom_banner {
+        @extend .flex_column;
+        @extend .flex_center;
+        width: 100%;
+        min-height: 180px;
+        margin-top: 20px;
+
+        h3 {
+            color: #fff;
+            font-family: 'Montserrat SemiBold', 'Montserrat Regular', 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 28px;
+            padding: 20px 0;
+        }
+
+        .superchinese_bottom_banner_link_mobile {
+            width: 310px;
+            @extend .flex_row;
+            @extend .flex_center;
+
+            .superchinese_bottom_banner_URL {
+                width: 240px;
+                height: 78px;
+                margin: 5px 5px 20px 5px;
+            }
+        }
+    }
+
+}
